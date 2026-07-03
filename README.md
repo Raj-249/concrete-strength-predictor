@@ -45,5 +45,6 @@ jupyter notebook concrete.ipynb
 
 ## Author
 
-**Raj Varshney**
-B.Tech Civil Engineering, IIT Bhubaneswar
+**Raj Varshney**  
+B.Tech Civil Engineering  
+IIT Bhubaneswar  
