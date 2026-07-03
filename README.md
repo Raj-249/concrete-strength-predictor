@@ -5,7 +5,7 @@ A machine learning project that predicts the compressive strength of concrete ba
 ## Tech Stack
 
 * **Language:** Python
-* **Data Analysis & Visualization:** Pandas, Matplotlib, Seaborn
+* **Data Analysis & Visualization:** Numpy, Pandas, Matplotlib, Seaborn
 * **Machine Learning:** Scikit-Learn (Polynomial Regression, GridSearchCV, StandardScaler)
 
 ## Model Performance
