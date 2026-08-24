@@ -61,3 +61,6 @@ def predict(data: Request):
     prediction = ml_models['model'].predict(scaled_input)
     
     return Response(prediction=prediction[0])
+
+# run
+# uvicorn main:app --reload
