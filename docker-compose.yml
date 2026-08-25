@@ -10,3 +10,5 @@ services:
       - "8501:8501"
     depends_on:
       - backend
+
+# RUN: docker compose up --build
