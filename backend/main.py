@@ -63,4 +63,4 @@ def predict(data: Request):
     return Response(prediction=prediction[0])
 
 # run
-# uvicorn main:app --reload
+# uvicorn main:app --reload --port 8000
