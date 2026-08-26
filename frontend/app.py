@@ -7,7 +7,7 @@ import requests
 st.set_page_config(page_title="Concrete Strength Predictor", page_icon="🤖", layout="wide")
 
 # Set the FastAPI endpoint URL (local or deployed)
-API_URL = "https://concrete-strength.fastapicloud.dev/"
+API_URL = "https://concrete-strength.fastapicloud.dev/predict"
 
 st.title("Concrete Compressive Strength Predictor")
 st.markdown("Enter the mixture components below to predict the 28-day equivalent compressive strength of the concrete.")
