@@ -84,6 +84,7 @@ No credit card required for deployment on these platforms. The services communic
     ```Bash
     docker compose up --build
     ```
+    *(Note: The `--build` flag requires an internet connection to download dependencies. Once built successfully, you can run the containers completely offline anytime using just `docker compose up`.)*
 
 3. **Access the services:**
 
