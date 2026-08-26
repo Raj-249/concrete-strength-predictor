@@ -10,5 +10,9 @@ services:
       - "8501:8501"
     depends_on:
       - backend
+    # Pass the internal backend service URL so the frontend can call the local API
+    # from inside the Docker network instead of hardcoding the public cloud endpoint.
+    environment:
+      - API_URL=http://backend:8000/predict
 
 # RUN: docker compose up --build

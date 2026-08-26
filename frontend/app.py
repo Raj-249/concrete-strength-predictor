@@ -1,3 +1,5 @@
+import os
+
 import streamlit as st
 import requests
 
@@ -6,8 +8,9 @@ import requests
 # ==========================================
 st.set_page_config(page_title="Concrete Strength Predictor", page_icon="🤖", layout="wide")
 
-# Set the FastAPI endpoint URL (local or deployed)
-API_URL = "https://concrete-strength.fastapicloud.dev/predict"
+# This lets the app use the Docker container backend automatically.
+# If no environment variable is set, it still falls back to the live deployed API.
+API_URL = os.getenv("API_URL", "https://concrete-strength.fastapicloud.dev/predict")
 
 st.title("Concrete Compressive Strength Predictor")
 st.markdown("Enter the mixture components below to predict the 28-day equivalent compressive strength of the concrete.")

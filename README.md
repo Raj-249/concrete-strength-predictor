@@ -126,11 +126,12 @@ The backend FastAPI application provides the following endpoints:
 ```json
 {
   "cement": 540,
+  "slag": 0,
+  "ash": 0,
   "water": 162,
-  "blast_furnace_slag": 0,
-  "fly_ash": 0,
-  "coarse_aggregate": 1040,
-  "fine_aggregate": 676,
+  "superplastic": 40,
+  "coarseagg": 1040,
+  "fineagg": 676,
   "age": 28
 }
 ```
@@ -169,14 +170,16 @@ Visit the API docs at `/docs` for interactive Swagger documentation.
 
 1. **Visit the live app:** [https://concrete-compressive-strength-predictions.streamlit.app/](https://concrete-compressive-strength-predictions.streamlit.app/)
 2. **Enter concrete mix parameters:**
-   - Cement content (kg/m³)
-   - Water content (kg/m³)
+   - Cement (kg/m³)
    - Blast furnace slag (kg/m³)
    - Fly ash (kg/m³)
-   - Coarse aggregate (kg/m³)
-   - Fine aggregate (kg/m³)
-   - Curing age (days)
-3. **View the predicted 28-day compressive strength in MPa**
+   - Water (kg/m³)
+   - Superplasticizer (kg/m³)
+   - Coarse Aggregate (kg/m³)
+   - Fine Aggregate (kg/m³)
+   - Curing Age (Days)
+3. **Enter the superplasticizer value as well**
+4. **View the predicted 28-day compressive strength in MPa**
 
 ## Contributing
 
