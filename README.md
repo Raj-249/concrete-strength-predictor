@@ -97,7 +97,7 @@ No credit card required for deployment on these platforms. The services communic
     ```Bash
     cd backend
     pip install -r requirements.txt
-    uvicorn main:app --reload
+    fastapi dev main.py
     ```
 
     Backend will be available at `http://localhost:8000`
@@ -160,11 +160,11 @@ Visit the API docs at `/docs` for interactive Swagger documentation.
 
 ### Deploy Backend to FastAPI Cloud
 
-1. Push your code to GitHub
-2. Go to [FastAPI Cloud](https://fastapicloud.com)
-3. Connect your GitHub repository
-4. Select the backend folder and deploy
-5. Update the frontend `app.py` with the new API endpoint URL
+1. Navigate to the `backend` directory in your terminal.
+2. Install the CLI: `pip install "fastapi[standard]"`
+3. Run `fastapi login` to authenticate.
+4. Run `fastapi deploy` to build and deploy to the cloud.
+5. Update the frontend `app.py` with the new API endpoint URL.
 
 ## Usage
 
@@ -178,8 +178,7 @@ Visit the API docs at `/docs` for interactive Swagger documentation.
    - Coarse Aggregate (kg/m³)
    - Fine Aggregate (kg/m³)
    - Curing Age (Days)
-3. **Enter the superplasticizer value as well**
-4. **View the predicted 28-day compressive strength in MPa**
+3. **View the predicted 28-day compressive strength in MPa**
 
 ## Contributing
 
