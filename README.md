@@ -8,6 +8,12 @@ The application models the non-linear physical interactions between concrete ing
 
 **Access the live application here:** [https://concrete-compressive-strength-predictions.streamlit.app/](https://concrete-compressive-strength-predictions.streamlit.app/)
 
+
+## Dataset
+
+The model was trained on the **Concrete Compressive Strength** dataset, sourced from [Kaggle](https://www.kaggle.com/datasets/ahmeduzaki/concrete-compressive-strength-dataset/data).
+
+
 ## Features
 
 - **Interactive Web Dashboard:** Clean user interface to enter mix design parameters and view real-time strength predictions.
